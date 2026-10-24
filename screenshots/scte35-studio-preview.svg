@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" width="1200" height="700">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0e17"/>
+      <stop offset="100%" stop-color="#121a29"/>
+    </linearGradient>
+    <linearGradient id="headerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f2fe"/>
+      <stop offset="100%" stop-color="#4facfe"/>
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#182338"/>
+      <stop offset="100%" stop-color="#101826"/>
+    </linearGradient>
+    <linearGradient id="availGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f2fe"/>
+      <stop offset="100%" stop-color="#4facfe"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="700" fill="url(#bg)" />
+
+  <!-- Studio Frame -->
+  <rect x="30" y="30" width="1140" height="640" rx="12" fill="#0f1726" stroke="#243450" stroke-width="2" />
+
+  <!-- Window Header -->
+  <rect x="30" y="30" width="1140" height="52" rx="12" fill="#141f33" />
+  <circle cx="60" cy="56" r="7" fill="#ff5f56" />
+  <circle cx="85" cy="56" r="7" fill="#ffbd2e" />
+  <circle cx="110" cy="56" r="7" fill="#27c93f" />
+
+  <!-- Title -->
+  <text x="140" y="62" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="16" font-weight="bold">
+    ⚡ SCTE35Forge Pro v1.0.0 — SCTE-35 (2024), SCTE-104 &amp; Dynamic Ad Insertion (DAI) Studio
+  </text>
+  <rect x="990" y="44" width="160" height="26" rx="6" fill="#10b981" fill-opacity="0.15" stroke="#10b981" stroke-width="1" />
+  <text x="1005" y="62" fill="#10b981" font-family="monospace" font-size="12" font-weight="bold">10/10 PASS • CERTIFIED</text>
+
+  <!-- Nav Tabs -->
+  <rect x="50" y="102" width="1100" height="42" rx="8" fill="#121c2e" stroke="#1f2d47" stroke-width="1" />
+  <rect x="54" y="106" width="260" height="34" rx="6" fill="#00f2fe" fill-opacity="0.2" stroke="#00f2fe" stroke-width="1.5" />
+  <text x="80" y="128" fill="#ffffff" font-family="-apple-system, sans-serif" font-size="13" font-weight="bold">1. Splice Generator</text>
+  
+  <text x="350" y="128" fill="#8ea2c0" font-family="-apple-system, sans-serif" font-size="13">2. Binary Decoder &amp; Parser</text>
+  <text x="630" y="128" fill="#8ea2c0" font-family="-apple-system, sans-serif" font-size="13">3. OTT Manifests (HLS / DASH)</text>
+  <text x="910" y="128" fill="#8ea2c0" font-family="-apple-system, sans-serif" font-size="13">4. 10-Point Normative Auditor</text>
+
+  <!-- Left Column: Generator Configuration -->
+  <rect x="50" y="162" width="530" height="485" rx="10" fill="url(#cardGrad)" stroke="#22334f" stroke-width="1" />
+  <text x="75" y="196" fill="#00f2fe" font-family="-apple-system, sans-serif" font-size="16" font-weight="bold">Splice Command Configuration</text>
+
+  <text x="75" y="235" fill="#8ea2c0" font-family="-apple-system, sans-serif" font-size="12">Command Type:</text>
+  <rect x="75" y="245" width="480" height="35" rx="6" fill="#0c1422" stroke="#2a3d5e" stroke-width="1" />
+  <text x="90" y="268" fill="#e2e8f0" font-family="monospace" font-size="12">splice_insert (0x05) — Classic Commercial Avail</text>
+
+  <text x="75" y="305" fill="#8ea2c0" font-family="-apple-system, sans-serif" font-size="12">Splice Event ID &amp; Presentation Time:</text>
+  <rect x="75" y="315" width="230" height="35" rx="6" fill="#0c1422" stroke="#2a3d5e" stroke-width="1" />
+  <text x="90" y="338" fill="#e2e8f0" font-family="monospace" font-size="13">Event ID: 1001</text>
+  <rect x="325" y="315" width="230" height="35" rx="6" fill="#0c1422" stroke="#2a3d5e" stroke-width="1" />
+  <text x="340" y="338" fill="#e2e8f0" font-family="monospace" font-size="13">2000.0s (180,000,000 PTS)</text>
+
+  <text x="75" y="375" fill="#8ea2c0" font-family="-apple-system, sans-serif" font-size="12">Break Duration &amp; Unique Program ID:</text>
+  <rect x="75" y="385" width="230" height="35" rx="6" fill="#0c1422" stroke="#2a3d5e" stroke-width="1" />
+  <text x="90" y="408" fill="#e2e8f0" font-family="monospace" font-size="13">Duration: 30.0s</text>
+  <rect x="325" y="385" width="230" height="35" rx="6" fill="#0c1422" stroke="#2a3d5e" stroke-width="1" />
+  <text x="340" y="408" fill="#e2e8f0" font-family="monospace" font-size="13">UPID: 1 (Avail 1/1)</text>
+
+  <rect x="75" y="445" width="480" height="80" rx="8" fill="#0c1422" stroke="#243450" stroke-width="1" />
+  <text x="90" y="470" fill="#8ea2c0" font-family="-apple-system, sans-serif" font-size="11">TIMECODE &amp; 90 kHz TIMEBASE</text>
+  <text x="90" y="498" fill="#00f2fe" font-family="monospace" font-size="20" font-weight="bold">00:33:20:00</text>
+  <text x="260" y="498" fill="#38ef7d" font-family="monospace" font-size="14">Auto-Return: TRUE</text>
+
+  <rect x="75" y="550" width="230" height="40" rx="6" fill="url(#headerGrad)" />
+  <text x="115" y="575" fill="#05101e" font-family="-apple-system, sans-serif" font-size="13" font-weight="bold">Synthesize SCTE-35</text>
+
+  <!-- Right Column: Binary Dissect & Manifests -->
+  <rect x="600" y="162" width="550" height="485" rx="10" fill="url(#cardGrad)" stroke="#22334f" stroke-width="1" />
+  <text x="625" y="196" fill="#00f2fe" font-family="-apple-system, sans-serif" font-size="16" font-weight="bold">Synthesized Payload &amp; Manifest Cues</text>
+
+  <!-- Badges -->
+  <rect x="625" y="215" width="240" height="75" rx="8" fill="#0b121e" stroke="#243450" stroke-width="1" />
+  <text x="640" y="238" fill="#7d91b0" font-family="-apple-system, sans-serif" font-size="11">MPEG-2 CRC-32 (0x04C11DB7)</text>
+  <text x="640" y="268" fill="#10b981" font-family="monospace" font-size="18" font-weight="bold">0x2F78A0B1 (PASS)</text>
+
+  <rect x="885" y="215" width="240" height="75" rx="8" fill="#0b121e" stroke="#243450" stroke-width="1" />
+  <text x="900" y="238" fill="#7d91b0" font-family="-apple-system, sans-serif" font-size="11">SECTION LENGTH</text>
+  <text x="900" y="268" fill="#00f2fe" font-family="monospace" font-size="18" font-weight="bold">39 Bytes (Table 0x00)</text>
+
+  <!-- Code Block: Base64 -->
+  <text x="625" y="315" fill="#8ea2c0" font-family="-apple-system, sans-serif" font-size="11">BASE64 ENCODED SCTE-35 PAYLOAD:</text>
+  <rect x="625" y="325" width="500" height="45" rx="6" fill="#070c14" stroke="#243450" stroke-width="1" />
+  <text x="635" y="352" fill="#cbd5e1" font-family="monospace" font-size="11">/DAWAAAAAAAAAP/wBQb+AAAAAAAiAiBDVUVJAAAAAX//...==</text>
+
+  <!-- Code Block: HLS Tag -->
+  <text x="625" y="395" fill="#8ea2c0" font-family="-apple-system, sans-serif" font-size="11">APPLE HLS #EXT-X-DATERANGE TAG (RFC 8216bis):</text>
+  <rect x="625" y="405" width="500" height="50" rx="6" fill="#070c14" stroke="#243450" stroke-width="1" />
+  <text x="635" y="425" fill="#38ef7d" font-family="monospace" font-size="10">#EXT-X-DATERANGE:ID="splice-1001",START-DATE="2026-10-09T14:30:00Z",</text>
+  <text x="635" y="442" fill="#38ef7d" font-family="monospace" font-size="10">PLANNED-DURATION=30.000,SCTE35-OUT=0x003024000000000000fff005...</text>
+
+  <!-- Timeline Avail Bar -->
+  <text x="625" y="480" fill="#8ea2c0" font-family="-apple-system, sans-serif" font-size="11">SERVER-SIDE AD INSERTION (SSAI) TIMELINE HORIZON:</text>
+  <rect x="625" y="490" width="500" height="40" rx="6" fill="#070c14" stroke="#243450" stroke-width="1" />
+  <rect x="720" y="490" width="220" height="40" fill="url(#availGrad)" rx="4" />
+  <text x="760" y="515" fill="#05101e" font-family="-apple-system, sans-serif" font-size="12" font-weight="bold">Commercial Avail (30.0s)</text>
+
+  <!-- MPEG-DASH EventStream Preview -->
+  <text x="625" y="555" fill="#8ea2c0" font-family="-apple-system, sans-serif" font-size="11">MPEG-DASH IN-MANIFEST EVENTSTREAM:</text>
+  <rect x="625" y="565" width="500" height="60" rx="6" fill="#070c14" stroke="#243450" stroke-width="1" />
+  <text x="635" y="585" fill="#93c5fd" font-family="monospace" font-size="10">&lt;EventStream schemeIdUri="urn:scte:scte35:2014:xml+bin" timescale="90000"&gt;</text>
+  <text x="635" y="602" fill="#93c5fd" font-family="monospace" font-size="10">  &lt;Event presentationTime="180000000" duration="2700000" id="1001"&gt;...&lt;/Event&gt;</text>
+</svg>
